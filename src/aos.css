@@ -1,0 +1,10 @@
+[data-aos] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 00.5s, transform 00.5s;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
