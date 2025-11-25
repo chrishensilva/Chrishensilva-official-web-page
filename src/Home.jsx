@@ -5,7 +5,7 @@ function Home()
 {
     return(
         <>
-        <div className='navigation'>
+        <div className='navigation' data-aos="fade-down">
             <h2>Chrishen</h2>
             <ul className="menu">
                 <li><a href="#home">Home</a></li>

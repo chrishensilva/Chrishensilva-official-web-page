@@ -33,15 +33,15 @@ function Contacts()
                     </div>
                 </div>
                 <div className="socialmedia">
-                    <h3>Follow me on</h3>
+                    <h3 data-aos="fade-up">Follow me on</h3>
                     <div className="media">
-                        <img src={fb} className='logo'></img>
-                        <img src={inster} className='logo'></img>
-                        <img src={spotify} className='logo'></img>
-                        <img src={itunes} className='logo'></img>
-                        <img src={yt} className='logo'></img>
-                        <img src={soundcloud} className='logo'></img>
-                        <img src={deezer} className='logo'></img>
+                        <a href='https://www.facebook.com/chrishen.silva.2025' target='_blank'><img src={fb} alt='Logo of facebook' loading='lazy' className='logo'></img></a>
+                        <a href='https://www.instagram.com/chrishen_silva/' target='_blank'><img src={inster} alt='Logo of instergram' loading='lazy' className='logo'></img></a>
+                        <a href='https://open.spotify.com/artist/5XShvesrxeUmkwuCN4Lm6P?si=hWyskldBSJ6UF-awS6gkYA' target='_blank'><img src={spotify} alt='Logo of spotify' loading='lazy' className='logo'></img></a>
+                        <a href='https://music.apple.com/sg/artist/chrishen-silva/1549622928' target='_blank'><img src={itunes} alt='Logo of itunes' loading='lazy' className='logo'></img></a>
+                        <a href='https://www.youtube.com/@Chrishensilva' target='_blank'><img src={yt} alt='Logo of youtube' loading='lazy' className='logo'></img></a>
+                        <a href='https://on.soundcloud.com/mo9nQA1ZPCbZVfJIPW' target='_blank'><img src={soundcloud} alt='Logo of soundcloud' loading='lazy' className='logo'></img></a>
+                        <a href='https://link.deezer.com/s/31yJLmensk3WYe27BEhRu' target='_blank'><img src={deezer} alt='Logo of deezer' loading='lazy' className='logo'></img></a>
                     </div>
                 </div>
             </div>

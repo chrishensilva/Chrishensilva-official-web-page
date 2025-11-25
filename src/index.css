@@ -4,6 +4,7 @@ html
   background-color: #ffffff;
   font-family:'Poppins';
 }
+
 .navigation
 {
   background-color: rgba(255, 255, 255, 0.274);
@@ -570,7 +571,6 @@ margin-bottom: -4%;
 
 footer
 {
-  margin-top: 5%;
   background-color: #FDFAF6;
   padding: 50px;
 }
@@ -588,9 +588,11 @@ a
 }
 .album-body
 {
+  /*background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(255, 255, 255, 0));*/
   
-  margin-top: 10%;
   background-color: #1d1d1d;
+  padding-bottom: 80px;
+  
 }
 .img1,
 .img2,
@@ -638,15 +640,16 @@ a
 .imgbox1
 {
   display: flex;
-
 }
+
 
 .collaborator-container {
   width: 90%;
   max-width: 1200px;
   margin: 50px auto;
   font-family: "Poppins", sans-serif;
-  margin-bottom: -4%
+  margin-bottom: -4%;
+  height: 1000px;
 }
 
 .colhead {
@@ -772,8 +775,66 @@ a
 .scroll-btn.right {
   right: -40px;
 }
+.parallax {
+  background-image: url('./assets/para.jpg');
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  pointer-events: none;
+}
 
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers both horizontally and vertically */
+  text-align: center;
+  color: white; /* h1 and buttons will be white */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between h1 and buttons */
+}
+.parallax-content h1
+{
+  font-size: 3rem;
+}
+.parabuttons {
+  display: flex;
+  gap: 15px; /* spacing between buttons */
+  justify-content: center;
+}
+
+.paraspotify, .paraapple {
+  padding: 15px 50px;
+  border: none;
+  cursor: pointer;
+  font-family: 'poppins';
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.paraspotify {
+  background-color: #1ED760; /* Spotify green */
+  color: white;
+}
+
+.paraapple {
+  background-color: #fc3044; /* Apple pink (or you can use black) */
+  color: white;
+}
 
 
 
@@ -901,4 +962,111 @@ a
     scale: 1;
     opacity: 1;
     visibility: visible;
+}
+
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+
+  .navigation {
+    padding: 10px 15px;
+  }
+
+  .menu {
+    margin-left: 0;
+    gap: 5px;
+  }
+
+  .menu li {
+    padding: 5px 10px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .bio-body {
+    width: 100%;
+  }
+
+  .bio-img {
+    width: 100%;
+  }
+
+  .bio-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hide floating quote boxes on small screens */
+  .bio-overlay-top,
+  .bio-overlay-bottom,
+  .bio-overlay-middleR,
+  .bio-overlay-middleL {
+    display: none;
+  }
+
+  .imagebox {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    width: 100%;
+    place-items: center;
+  }
+
+  .imgsize {
+    width: 100%;
+    height: auto;
+  }
+
+  .viewcount {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .vid-container,
+  .vid-link {
+    width: 100%;
+  }
+
+  iframe.link {
+    border-radius: 10px;
+  }
+
+  .contact-body {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .socialmedia,
+  .contact-me {
+    width: 100%;
+  }
+
+  /* Bento Grid Responsive */
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Collaborator Horizontal Scroll Cards */
+  .msgimgbox {
+    width: 220px;
+  }
+
+  /* The EXPANDING ALBUM SCROLLER */
+  .conteiner {
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .conteiner li:hover {
+    flex: 0 1 180px;
+  }
 }

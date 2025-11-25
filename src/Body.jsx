@@ -7,6 +7,7 @@ import Biography from "./Biography.jsx";
 import Contacts from './Contacts.jsx';
 import Album from './Album.jsx';
 import Collaborate from "./Collaborate.jsx";
+import Parallax from "./Parallax.jsx";
 function Body()
 {
     return(
@@ -16,6 +17,7 @@ function Body()
             <Biography/>
             <Video/>
             <Collaborate/>
+            <Parallax/>
             <Album/>
             <Contacts/>
             <footer>

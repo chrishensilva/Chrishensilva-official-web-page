@@ -4,8 +4,8 @@ import featured from "./assets/Featured.png";
 function Featured() {
   const bgRef = useRef(null);
 
-  /*useEffect(() => {
-    const speed = 0.001; // smaller means background moves slower
+  useEffect(() => {
+    const speed = 0.3; // smaller means background moves slower
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -19,19 +19,21 @@ function Featured() {
     handleScroll(); // initial set
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);*/
+  }, []);
 
   return (
     <div className="app" id="home">
       <div className="featured">
         <div
           ref={bgRef}
+          alt='Image of Pem hamuwa' 
+          loading='lazy' 
           className="featured-bg"
-          style={{ backgroundImage: `url(${''})` }}
+          style={{ backgroundImage: `url(${'featured'})` }}
         />
         <div className="title-container">
-          <h1 className="title">PEM HAMUWA</h1>
-          <button className="listennow">Listen Now</button>
+          <h1 className="title" data-aos="fade-up">PEM HAMUWA</h1>
+          <button className="listennow" data-aos="fade-up" data-aos-duration="1200">Listen Now</button>
         </div>
       </div>
 
@@ -52,11 +54,9 @@ function Featured() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           accumsan vel orci vel gravida. Sed faucibus sem et libero suscipit,
           sit amet fringilla turpis viverra.
-        </p>/*}
+        </p>
 
-        {/* Extra height so page can scroll 
-        <div style={{ height: "120vh" }} />
-      </div>*/}
+        <div style={{ height: "120vh" }} />*/}
     </div>
   );
 }

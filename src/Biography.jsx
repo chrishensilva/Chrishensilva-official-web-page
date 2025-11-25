@@ -7,8 +7,8 @@ function Biography()
         <>
         <div className="bio-bg" id='bio'>
             <div className="bio-container">
-                <div className="bio-body">
-                    <h2 className="biohead">BIOGRAPHY</h2>
+                <div className="bio-body" data-aos="fade-up">
+                    <h2 className="biohead" >BIOGRAPHY</h2>
                     <p className="bio-text">Chrishen Silva is a Young Music Producer from Sri Lanka. 
                         Starts his music explorations since 2017.
                         Stay tuned with Chrishen and explore the sweet spots in music.</p>
@@ -19,7 +19,7 @@ function Biography()
                     </div>
                 </div>
                 <div className="bio-img">
-                    <img src={bioimg}></img>
+                    <img src={bioimg} alt='Image of Chrishen Silva' loading='lazy'></img>
                     <div className="bio-overlay-top">
                         <p className="bio-cmt" >Woww guys 😮 You guys have done a great job 🖤✨</p>
                         <p className="platform">-YouTube-</p>
