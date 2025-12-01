@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+<<<<<<< HEAD
 Sitemap: https://chrishensilva.page/sitemap.xml
+=======
+Sitemap: https://chrishensilva.page/sitemap.xml
+>>>>>>> fd0737d74e47228cc1916dc2624852b2377af5d5
