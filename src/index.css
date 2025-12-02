@@ -377,6 +377,10 @@ body {
 .contact-head h2 {
   color: rgb(255, 255, 255);
 }
+.contact-head p {
+  margin-top: -3%;
+  color: white;
+}
 .contact-container {
   padding: 0;
   margin-top: 3%;
@@ -498,7 +502,7 @@ body {
 }
 
 footer {
-  background-color: #fdfaf6;
+  background-color: #ffffff;
   padding: 50px;
 }
 footer h2 {
@@ -862,8 +866,11 @@ a {
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
   .navigation {
-    padding: 10px 15px;
+    padding: 05px;
   }
 
   .menu {
@@ -872,7 +879,8 @@ a {
   }
 
   .menu li {
-    padding: 5px 10px;
+    font-size: 1rem;
+    padding: 1px;
   }
 
   .title {
@@ -941,7 +949,20 @@ a {
 
   .socialmedia,
   .contact-me {
-    width: 100%;
+    width: 0 auto;
+  }
+  .conlogo {
+    padding: 1px;
+    width: 20px;
+  }
+  .contact-heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .contact-p {
+    display: flex;
+    flex-direction: column;
   }
 
   /* Bento Grid Responsive */
@@ -962,5 +983,19 @@ a {
 
   .conteiner li:hover {
     flex: 0 1 180px;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+  footer {
+    width: 0 auto;
+  }
+  footer h2 {
+    text-align: center;
+  }
+  .colhead h2 {
+    font-size: 2rem;
   }
 }
