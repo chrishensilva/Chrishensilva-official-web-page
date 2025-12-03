@@ -1,0 +1,77 @@
+.project-head {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-head h2 {
+  font-size: 4rem;
+}
+.project-head p {
+  margin-top: -3%;
+}
+.project-body {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.project-body h3 {
+  font-size: 2rem;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.project-grid,
+.project-grid-duplicate {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0; /* prevents images from shrinking */
+  animation: scrollLeft 30s linear infinite;
+  margin-bottom: 2%;
+}
+
+.project-grid-duplicate {
+  position: absolute;
+  left: 132%;
+  top: 0;
+}
+
+.project-grid img {
+  height: 250px; /* fixed height */
+  width: auto; /* natural width */
+  object-fit: contain; /* prevents cropping */
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.marquee img {
+  height: 250px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+#p2 {
+  animation-direction: reverse;
+  left: 125%;
+}
+#pg2 {
+  left: 98%;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

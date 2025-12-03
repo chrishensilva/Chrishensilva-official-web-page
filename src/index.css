@@ -883,10 +883,6 @@ a {
     padding: 1px;
   }
 
-  .title {
-    font-size: 4rem;
-  }
-
   .bio-container {
     flex-direction: column;
     text-align: center;

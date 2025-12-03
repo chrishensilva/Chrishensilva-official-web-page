@@ -26,14 +26,22 @@ function Featured() {
       <div className="featured">
         <div
           ref={bgRef}
-          alt='Image of Pem hamuwa' 
-          loading='lazy' 
+          alt="Image of Pem hamuwa"
+          loading="lazy"
           className="featured-bg"
-          style={{ backgroundImage: `url(${'featured'})` }}
+          style={{ backgroundImage: `url(${"featured"})` }}
         />
         <div className="title-container">
-          <h1 className="title" data-aos="fade-up">PEM HAMUWA</h1>
-          <button className="listennow" data-aos="fade-up" data-aos-duration="1200">Listen Now</button>
+          <h1 className="title" data-aos="fade-up">
+            PEM HAMUWA
+          </h1>
+          <button
+            className="listennow"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            Listen Now
+          </button>
         </div>
       </div>
 
