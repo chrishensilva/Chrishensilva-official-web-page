@@ -1,16 +1,16 @@
-import a1 from "./assets/projects/pem hamuwa/p1.png";
-import a2 from "./assets/projects/pem hamuwa/p2.png";
-import a3 from "./assets/projects/pem hamuwa/p3.png";
-import a4 from "./assets/projects/pem hamuwa/p4.png";
-import a5 from "./assets/projects/pem hamuwa/p5.png";
-import b1 from "./assets/projects/prehelikawak/p1.png";
-import b2 from "./assets/projects/prehelikawak/p2.png";
-import b3 from "./assets/projects/prehelikawak/p3.png";
-import b4 from "./assets/projects/prehelikawak/p4.jpg";
-import c1 from "./assets/projects/aleymal/p1.png";
-import c2 from "./assets/projects/aleymal/p2.png";
-import c3 from "./assets/projects/aleymal/p3.png";
-import c4 from "./assets/projects/aleymal/p4.png";
+import a1 from "./assets/projects/pem hamuwa/p1.webp";
+import a2 from "./assets/projects/pem hamuwa/p2.webp";
+import a3 from "./assets/projects/pem hamuwa/p3.webp";
+import a4 from "./assets/projects/pem hamuwa/p4.webp";
+import a5 from "./assets/projects/pem hamuwa/p5.webp";
+import b1 from "./assets/projects/prehelikawak/p1.webp";
+import b2 from "./assets/projects/prehelikawak/p2.webp";
+import b3 from "./assets/projects/prehelikawak/p3.webp";
+import b4 from "./assets/projects/prehelikawak/p4.webp";
+import c1 from "./assets/projects/aleymal/p1.webp";
+import c2 from "./assets/projects/aleymal/p2.webp";
+import c3 from "./assets/projects/aleymal/p3.webp";
+import c4 from "./assets/projects/aleymal/p4.webp";
 
 import "./projects.css";
 function Projects() {

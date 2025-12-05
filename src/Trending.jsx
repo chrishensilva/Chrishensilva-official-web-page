@@ -1,11 +1,5 @@
-import bg from './assets/Latest/bg.jpg'
-function Trending()
-{
-    return(
-        <>
-            
-        </>
-    );
+function Trending() {
+  return <></>;
 }
 
-export default Trending
+export default Trending;

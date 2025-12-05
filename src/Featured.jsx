@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import featured from "./assets/Featured.png";
+import featured from "./assets/Featured.webp";
 
 function Featured() {
   const bgRef = useRef(null);
