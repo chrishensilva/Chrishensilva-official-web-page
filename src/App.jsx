@@ -3,11 +3,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 import { updateSEO } from "./seo";
-import { Analytics } from "@vercel/analytics/next";
+import { inject } from "@vercel/analytics";
 import React, { useEffect } from "react";
 
 function App() {
   useEffect(() => {
+    inject();
     updateSEO({
       title: "Chrishen Silva | Welcome to official website",
       description:
