@@ -3,7 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Helmet } from "react-helmet";
 import { updateSEO } from "./seo";
-import { Analytics } from "@vercel/analytics/next";
+{
+  /*import { Analytics } from "@vercel/analytics/next";*/
+}
 import React, { useEffect } from "react";
 
 function App() {

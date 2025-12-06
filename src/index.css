@@ -228,7 +228,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   color: black;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   text-align: justify;
   animation: float 2s ease-in-out infinite;
 }
@@ -240,7 +240,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   color: black;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   text-align: justify;
   animation: float 2s ease-in-out infinite;
 }
@@ -252,7 +252,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   color: black;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   text-align: justify;
   animation: float 2s ease-in-out infinite;
 }
@@ -264,7 +264,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   color: black;
-  background-color: #ebebeb;
+  background-color: #f7f7f7;
   text-align: justify;
   animation: float 2s ease-in-out infinite;
 }
@@ -279,7 +279,7 @@ body {
   color: white;
 }
 .platform {
-  color: rgb(138, 138, 138);
+  color: #545454;
   font-size: 10px;
 }
 

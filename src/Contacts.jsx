@@ -24,13 +24,16 @@ function Contacts() {
             <div className="contact-me">
               <div className="contact-heading">
                 <h3>
-                  <img src={home} className="conlogo"></img> Address
+                  <img src={home} className="conlogo" alt="home logo"></img>{" "}
+                  Address
                 </h3>
                 <h3>
-                  <img src={email} className="conlogo"></img>Email
+                  <img src={email} className="conlogo" alt="email logo"></img>
+                  Email
                 </h3>
                 <h3>
-                  <img src={tele} className="conlogo"></img>Contact Number
+                  <img src={tele} className="conlogo" alt="phone logo"></img>
+                  Contact Number
                 </h3>
               </div>
               <div className="contact-p">
