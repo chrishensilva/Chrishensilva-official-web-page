@@ -281,17 +281,7 @@ function Collaborate() {
         <div className="message-box" ref={scrollRef}>
           {collaborators.map((col, i) => (
             <div className="msgimgbox" key={i}>
-              <img
-                style={{
-                  width: "300px", // Set a fixed width
-                  height: "400px", // Set a fixed height
-                  objectFit: "cover", // Ensures the image covers the area without distortion
-                  // Optional: If you want a circular image
-                }}
-                src={col.img}
-                alt={col.name}
-                className="collaborator"
-              />
+              <img src={col.img} alt={col.name} className="collaborator" />
               <h3>{col.name}</h3>
               <p>{col.message}</p>
               <div className="colsongs">
