@@ -151,7 +151,7 @@ function Collaborate() {
       img: img11,
       message:
         "The Piano Man Balladeer; sings with a warm, slightly strained vulnerability, often centered around simple piano melodies.",
-      songs: ["Nura Wasanthe Cover"],
+      songs: ["Nura Wasanthe Cover", "Muthu Muthu Pinikata Cover"],
       alt: "Image of Dileesha Appuhamy",
       loading: "lazy",
     },
