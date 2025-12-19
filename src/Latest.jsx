@@ -25,28 +25,28 @@ function Latest() {
         <div className="imagebox">
           <img
             className="imgsize"
-            src={image1}
+            src={image4}
             alt="image of pem hamuwa"
             loading="lazy"
             data-aos="fade-right"
           />
           <img
             className="imgsize"
-            src={image2}
+            src={image1}
             alt="image of seetha maruthe"
             loading="lazy"
             data-aos="fade-left"
           />
           <img
             className="imgsize"
-            src={image3}
+            src={image2}
             alt="image of dekopul kadulin thema"
             loading="lazy"
             data-aos="fade-right"
           />
           <img
             className="imgsize"
-            src={image4}
+            src={image3}
             alt="image of aaley mal"
             loading="lazy"
             data-aos="fade-left"
