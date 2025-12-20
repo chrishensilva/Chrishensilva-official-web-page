@@ -1,4 +1,5 @@
 import bioimg from "./assets/bio.webp";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 function Biography() {
@@ -24,6 +25,9 @@ function Biography() {
                 <div className="relno">59</div>RELEASES
               </h2>
             </div>
+            {/*<Link to="/studio">
+              <button className="book-session-btn">Book a Session</button>
+            </Link>*/}
           </div>
           <div className="bio-img">
             <img

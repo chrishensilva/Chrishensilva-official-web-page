@@ -21,8 +21,8 @@ function Body() {
       <Projects />
       <Album />
       <Contacts />
-      <footer>
-        <h2>All Rights Reserved©2025 chrishensilva</h2>
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Chrishen Silva. All rights reserved.</p>
       </footer>
     </>
   );
