@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     // Replace with your GA4 Measurement ID
     const script = document.createElement("script");
-    script.src = `https://www.googletagmanager.com/gtag/js?id=G-ENWBB9YS78`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-0CM6KTW38K`;
     script.async = true;
     document.head.appendChild(script);
 
@@ -23,7 +23,7 @@ function App() {
       window.dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "G-ENWBB9YS78");
+    gtag("config", "G-0CM6KTW38K");
   }, []);
 
   useEffect(() => {
