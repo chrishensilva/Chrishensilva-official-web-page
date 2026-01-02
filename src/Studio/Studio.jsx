@@ -19,7 +19,7 @@ function Studio() {
             We Turning ideas <br />
             into timeless sound
           </h1>
-          <p>Chrishen Silva</p>
+          {/*<p>Chrishen Silva</p>*/}
         </div>
       </div>
       <div className="main-wrapper" data-aos="fade-up">
