@@ -10,9 +10,12 @@ function Studio() {
         <img src={heroimg}></img>
         <div className="nav">
           <h1>RedFlame Studios</h1>
+          <div className="navbarbtn">
+            <button className="navbtn">Book a Session</button>
+          </div>
         </div>
-        <div className="studio-text" data-aos="fade-up">
-          <h1>
+        <div className="studio-text">
+          <h1 className="studio-heading">
             We Turning ideas <br />
             into timeless sound
           </h1>
@@ -47,6 +50,9 @@ function Studio() {
       <Gallery />
       <div className="pkg" data-aos="fade-up" id="package">
         <h1>DISCOVER PACKAGES & SERVICES</h1>
+        <p className="pkgdesc">
+          Choose the package that perfectly fits your creative needs.
+        </p>
         <Card />
       </div>
       <footer className="footer">

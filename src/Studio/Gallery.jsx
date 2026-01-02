@@ -14,7 +14,7 @@ import { Button } from "react-scroll";
 function Gallery() {
   return (
     <>
-      <div className="bento-wrapper">
+      <div className="bento-wrapper" data-aos="fade-up">
         <div className="bento-grid">
           <div class="item large">
             <img src={i1}></img>

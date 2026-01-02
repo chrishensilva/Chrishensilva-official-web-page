@@ -25,9 +25,9 @@ function Biography() {
                 <div className="relno">59</div>RELEASES
               </h2>
             </div>
-            {/*<Link to="/studio">
+            <Link to="/studio">
               <button className="book-session-btn">Book a Session</button>
-            </Link>*/}
+            </Link>
           </div>
           <div className="bio-img">
             <img

@@ -19,16 +19,26 @@
 }
 .nav {
   max-width: 1500px;
-  padding: 0;
   margin: 0 auto;
   position: absolute;
   inset: 0; /* covers the whole image */
   display: flex;
+  justify-content: space-between;
 }
 .nav h1 {
   color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 700;
+}
+.navbarbtn {
+  align-items: center;
+  display: flex;
+}
+.navbtn {
+  padding: 10px 20px;
+  border-color: white;
+  background: none;
+  color: white;
 }
 
 .studio-text {
@@ -61,6 +71,9 @@
 }
 .pkg h1 {
   font-size: 3rem;
+}
+.pkgdesc {
+  color: #777575;
 }
 .main-wrapper {
   min-height: 100vh; /* takes full screen height */

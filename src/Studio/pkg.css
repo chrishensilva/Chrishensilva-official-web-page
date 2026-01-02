@@ -1,0 +1,77 @@
+.pkg-wrapper {
+  min-height: 100vh; /* full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+.pkg1-head h1 {
+  background-color: #2563eb;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+}
+.pkg-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* text stays left-aligned */
+  justify-content: center;
+  margin: 0 auto;
+}
+.pkg-description p::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #00e676; /* stylish green checkmark */
+  font-size: 1.1rem;
+}
+
+.pkg-body {
+  flex: 1; /* take remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.pkg-body h1 {
+  font-size: 3rem;
+}
+/* Flex container for body and book */
+/* Flex container for body and book */
+.pkg-content {
+  display: flex;
+  gap: 20px; /* reduce spacing so sections are closer */
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering of book relative to body */
+  flex-wrap: wrap; /* stack on small screens */
+  width: 100%; /* take full width of screen */
+  max-width: 1000px; /* optional: constrain content */
+  margin: 0 auto;
+}
+
+/* Booking section */
+.pkg-book {
+  flex: 0 0 250px; /* fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* center content vertically inside book box */
+  padding-left: 20px;
+  border-left: 2px solid #2563eb; /* divider line */
+  gap: 20px;
+}
+
+.pkg-book button {
+  padding: 12px 40px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pkg-book button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}

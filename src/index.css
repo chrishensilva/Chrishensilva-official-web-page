@@ -5,11 +5,12 @@ html {
 }
 
 .navigation {
-  background-color: rgba(255, 255, 255, 0.274);
+  /*background-color: rgba(255, 255, 255, 0.274);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);*/
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;

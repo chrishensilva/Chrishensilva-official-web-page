@@ -1,5 +1,9 @@
 import "./card.css";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 function Card() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="card">
@@ -18,7 +22,9 @@ function Card() {
             <div className="price">
               <h1>20,000 LKR</h1>
             </div>
-            <button className="select">Select</button>
+            <Link to="/package1">
+              <button className="select">Select</button>
+            </Link>
           </div>
         </div>
         <div className="card2">
@@ -36,6 +42,7 @@ function Card() {
             <div className="price">
               <h1>40,000+ LKR</h1>
             </div>
+
             <button className="select">Select</button>
           </div>
         </div>
