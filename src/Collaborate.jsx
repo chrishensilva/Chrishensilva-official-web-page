@@ -267,35 +267,37 @@ function Collaborate() {
   ];
 
   return (
-    <div className="collaborator-container">
-      <div className="colhead" data-aos="fade-up">
-        <h2>OUR COLLABORATORS</h2>
-        <p>HEAR WHAT OUR COLLABORATORS SAY</p>
-      </div>
-
-      <div className="scroll-wrapper" data-aos="fade-up">
-        <button className="scroll-btn left" onClick={() => scroll("left")}>
-          ◀
-        </button>
-
-        <div className="message-box" ref={scrollRef}>
-          {collaborators.map((col, i) => (
-            <div className="msgimgbox" key={i}>
-              <img src={col.img} alt={col.name} className="collaborator" />
-              <h3>{col.name}</h3>
-              <p>{col.message}</p>
-              <div className="colsongs">
-                {col.songs.map((song, idx) => (
-                  <p key={idx}>{song}</p>
-                ))}
-              </div>
-            </div>
-          ))}
+    <div className="colabwrapper">
+      <div className="collaborator-container">
+        <div className="colhead" data-aos="fade-up">
+          <h2>OUR COLLABORATORS</h2>
+          <p>HEAR WHAT OUR COLLABORATORS SAY</p>
         </div>
 
-        <button className="scroll-btn right" onClick={() => scroll("right")}>
-          ▶
-        </button>
+        <div className="scroll-wrapper" data-aos="fade-up">
+          <button className="scroll-btn left" onClick={() => scroll("left")}>
+            ◀
+          </button>
+
+          <div className="message-box" ref={scrollRef}>
+            {collaborators.map((col, i) => (
+              <div className="msgimgbox" key={i}>
+                <img src={col.img} alt={col.name} className="collaborator" />
+                <h3>{col.name}</h3>
+                <p>{col.message}</p>
+                <div className="colsongs">
+                  {col.songs.map((song, idx) => (
+                    <p key={idx}>{song}</p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <button className="scroll-btn right" onClick={() => scroll("right")}>
+            ▶
+          </button>
+        </div>
       </div>
     </div>
   );

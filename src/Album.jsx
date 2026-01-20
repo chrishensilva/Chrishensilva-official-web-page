@@ -9,7 +9,7 @@ function Album() {
     <>
       <div className="album-body">
         <div className="album-img">
-          <div className="imgbox1" data-aos="fade-up" data-aos-duration="500">
+          <div className="imgbox1" data-aos="fade-up">
             <img
               src={img1}
               alt="Image of Chrishen Silva"
@@ -17,7 +17,7 @@ function Album() {
               className="img1"
             ></img>
           </div>
-          <div className="imgbox2" data-aos="fade-up" data-aos-duration="1500">
+          <div className="imgbox2" data-aos="fade-up">
             <img
               src={img2}
               alt="Image of Chrishen Silva"
@@ -25,7 +25,7 @@ function Album() {
               className="img2"
             ></img>
           </div>
-          <div className="imgbox3" data-aos="fade-up" data-aos-duration="2500">
+          <div className="imgbox3" data-aos="fade-up">
             <img
               src={img3}
               alt="Image of Chrishen Silva"
@@ -33,7 +33,7 @@ function Album() {
               className="img3"
             ></img>
           </div>
-          <div className="imgbox4" data-aos="fade-up" data-aos-duration="3000">
+          <div className="imgbox4" data-aos="fade-up">
             <img
               src={img4}
               alt="Image of Chrishen Silva"
@@ -41,7 +41,7 @@ function Album() {
               className="img4"
             ></img>
           </div>
-          <div className="imgbox5" data-aos="fade-up" data-aos-duration="4500">
+          <div className="imgbox5" data-aos="fade-up">
             <img
               src={img5}
               alt="Image of Chrishen Silva"
