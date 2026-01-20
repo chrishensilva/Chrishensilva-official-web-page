@@ -932,6 +932,13 @@ a {
     font-size: 2.5rem;
     text-align: center;
   }
+  .nav-menu {
+    display: none;
+  }
+  .nav-title {
+    padding: 10px;
+    position: fixed;
+  }
   .vid-button {
     flex-direction: column; /* Change from row to column */
     gap: 10px; /* Reduce gap */
