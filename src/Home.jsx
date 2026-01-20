@@ -15,10 +15,10 @@ function Home() {
               <a href="#release">Releases</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#bio">About</a>
             </li>
             <li>
-              <a href="#bio">About</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
