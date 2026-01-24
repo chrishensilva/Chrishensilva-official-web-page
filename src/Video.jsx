@@ -9,7 +9,7 @@ function Video() {
             <h2>ALSO LISTEN TO</h2>
           </div>
           <div className="vid-button" data-aos="fade-up">
-            <button className="allrelease3">
+            {/*<button className="allrelease3">
               <a
                 href="https://open.spotify.com/track/6d915ul56vXr8tyy6taQ2Q?si=36752dd2f9864ebe"
                 target="_blank"
@@ -24,8 +24,11 @@ function Video() {
               >
                 LISTEN ON iTUNES
               </a>
-            </button>
-            <a href="https://www.youtube.com/@Chrishensilva" target="_blank">
+            </button>*/}
+            <a
+              href="https://youtu.be/4qL5DD5TJxo?si=Nu4VOjN8n3DZkhC4"
+              target="_blank"
+            >
               <button className="allrelease3">VIEW ON YOUTUBE</button>
             </a>
           </div>
@@ -33,7 +36,7 @@ function Video() {
             {/*<video src={vid1} className='link'></video>*/}
             <iframe
               className="link"
-              src="https://www.youtube.com/embed/qcFgKxCx8MM"
+              src="https://youtu.be/4qL5DD5TJxo?si=Nu4VOjN8n3DZkhC4"
               title="YouTube video"
               allowFullScreen
             ></iframe>

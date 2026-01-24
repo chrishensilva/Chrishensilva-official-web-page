@@ -26,13 +26,6 @@ function Latest() {
           <div className="imagebox">
             <img
               className="imgsize"
-              src={image4}
-              alt="image of pem hamuwa"
-              loading="lazy"
-              data-aos="fade-right"
-            />
-            <img
-              className="imgsize"
               src={image1}
               alt="image of seetha maruthe"
               loading="lazy"
@@ -51,6 +44,13 @@ function Latest() {
               alt="image of aaley mal"
               loading="lazy"
               data-aos="fade-left"
+            />
+            <img
+              className="imgsize"
+              src={image4}
+              alt="image of pem hamuwa"
+              loading="lazy"
+              data-aos="fade-right"
             />
             <div className="box"></div>
           </div>

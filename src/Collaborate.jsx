@@ -20,6 +20,7 @@ import img20 from "./assets/Colab/20.webp";
 import img21 from "./assets/Colab/21.webp";
 import img22 from "./assets/Colab/22.webp";
 import img23 from "./assets/Colab/23.webp";
+import img24 from "./assets/Colab/24.webp";
 import user from "./assets/user.webp";
 
 function Collaborate() {
@@ -232,7 +233,7 @@ function Collaborate() {
       img: img20,
       message:
         "The Urban Lyricist; a rapid, rhythmic delivery known for complex wordplay and street-smart commentary.",
-      songs: ["Radhawani Mashup"],
+      songs: ["Radhawani Mashup", "Premiye"],
       alt: "Image of Niwantha Yasas",
       loading: "lazy",
     },
@@ -261,6 +262,15 @@ function Collaborate() {
         "The Indie Pop Minimalist; a youthful, slightly flat vocal style delivered over simple, catchy, 8-bit inspired beats",
       songs: ["Seetha Maruthe Mashup"],
       alt: "Image of Mishel Fernando",
+      loading: "lazy",
+    },
+    {
+      name: "Alice On Shrooms",
+      img: img24,
+      message:
+        "A raw and versatile rap artist blending sharp lyrics with real-life stories. Known for confident delivery, modern beats, and an authentic sound that reflects hustle, culture, and emotion.",
+      songs: ["Premiyes"],
+      alt: "Image of Alice On Shrooms",
       loading: "lazy",
     },
     // Add more collaborators here
