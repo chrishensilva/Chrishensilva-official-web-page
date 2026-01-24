@@ -27,28 +27,28 @@ function Latest() {
             <img
               className="imgsize"
               src={image1}
-              alt="image of seetha maruthe"
+              alt="image of Premiye"
               loading="lazy"
               data-aos="fade-left"
             />
             <img
               className="imgsize"
               src={image2}
-              alt="image of dekopul kadulin thema"
+              alt="image of muthu muthu pinikata"
               loading="lazy"
               data-aos="fade-right"
             />
             <img
               className="imgsize"
               src={image3}
-              alt="image of aaley mal"
+              alt="image of pem hamuwa"
               loading="lazy"
               data-aos="fade-left"
             />
             <img
               className="imgsize"
               src={image4}
-              alt="image of pem hamuwa"
+              alt="image of Seetha maruthe"
               loading="lazy"
               data-aos="fade-right"
             />
