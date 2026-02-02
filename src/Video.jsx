@@ -34,11 +34,21 @@ function Video() {
           </div>
           <div className="vid-link" data-aos="fade-up">
             {/*<video src={vid1} className='link'></video>*/}
-            <iframe
+            {/*<iframe
               className="link"
               src="https://youtu.be/4qL5DD5TJxo?si=Nu4VOjN8n3DZkhC4"
               title="YouTube video"
               allowFullScreen
+            ></iframe>*/}
+            <iframe
+              width="1200"
+              height="700"
+              src="https://www.youtube.com/embed/4qL5DD5TJxo"
+              title="Premiye(ප්‍රේමියේ) - Chrishen | Yasas &amp; Alice On Shrooms (Official Audio)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </div>
         </div>
