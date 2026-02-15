@@ -29,7 +29,7 @@ function Featured() {
           alt="Image of Premiye"
           loading="lazy"
           className="featured-bg"
-          style={{ backgroundImage: `url(${"featured"})` }}
+          style={{ backgroundImage: `url(${featured})` }}
         />
         <div className="title-container">
           <h1 className="title" data-aos="fade-up">

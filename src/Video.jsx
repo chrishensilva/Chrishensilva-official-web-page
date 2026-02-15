@@ -41,14 +41,13 @@ function Video() {
               allowFullScreen
             ></iframe>*/}
             <iframe
-              width="1200"
-              height="700"
+              className="video-frame"
               src="https://www.youtube.com/embed/4qL5DD5TJxo"
               title="Premiye(ප්‍රේමියේ) - Chrishen | Yasas &amp; Alice On Shrooms (Official Audio)"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             ></iframe>
           </div>
         </div>

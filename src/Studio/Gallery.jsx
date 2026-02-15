@@ -1,3 +1,4 @@
+import React from "react";
 import "./BentoGrid.css";
 import i1 from "./assets/Gallery/1.png";
 import i2 from "./assets/Gallery/2.jpg";
@@ -9,76 +10,35 @@ import i7 from "./assets/Gallery/7.jpg";
 import i8 from "./assets/Gallery/8.jpg";
 import i9 from "./assets/Gallery/9.jpg";
 import i10 from "./assets/Gallery/10.webp";
-import { Button } from "react-scroll";
+
+const galleryImages = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10];
 
 function Gallery() {
   return (
-    <>
-      <div className="bento-wrapper" data-aos="fade-up">
-        <div className="bento-grid">
-          <div class="item large">
-            <img src={i1}></img>
-          </div>
-          <div class="item small">
-            <img src={i6}></img>
-          </div>
-          <div class="item small">
-            <img src={i3}></img>
-          </div>
-          <div class="item long">
-            <img src={i4}></img>
-          </div>
-          <div class="item small">
-            <img src={i9}></img>
-          </div>
-          <div class="item tall">
-            <img src={i6}></img>
-          </div>
-          <div class="item long">
-            <img src={i7}></img>
-          </div>
-          <div class="item small">
-            <img src={i8}></img>
-          </div>
-          <div class="item long">
-            <img src={i10}></img>
-          </div>
-          {/*section 2*/}
-          <div class="item small">
-            <img src={i6}></img>
-          </div>
-          <div class="item small">
-            <img src={i3}></img>
-          </div>
-          <div class="item large">
-            <img src={i1}></img>
-          </div>
-          <div class="item long">
-            <img src={i4}></img>
-          </div>
-          <div class="item small">
-            <img src={i9}></img>
-          </div>
-          <div class="item tall">
-            <img src={i6}></img>
-          </div>
-          <div class="item long">
-            <img src={i7}></img>
-          </div>
-          <div class="item small">
-            <img src={i8}></img>
-          </div>
-          <div class="item long">
-            <img src={i10}></img>
-          </div>
+    <div className="gallery-section" data-aos="fade-up">
+      <div className="gallery-container">
+        <div className="gallery-header">
+          <h1 className="gallery-title">PROJECT INSIGHTS</h1>
+          <p className="gallery-subtitle">Explore my music, albums, and artwork</p>
         </div>
-        <div className="bento-text">
-          <h1 className="projh">PROJECT INSIGHTS</h1>
-          <p>Explore my music, albums, and artwork</p>
-          <button className="explore-btn">Explore more</button>
+
+        <div className="gallery-grid">
+          {galleryImages.map((img, index) => (
+            <div className="gallery-item" key={index}>
+              <img src={img} alt={`Gallery item ${index + 1}`} loading="lazy" />
+              <div className="gallery-overlay">
+                <span>View Project</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="gallery-action">
+          <button className="explore-btn">Explore More</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Gallery;

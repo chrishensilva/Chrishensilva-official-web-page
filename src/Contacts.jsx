@@ -8,123 +8,88 @@ import deezer from "./assets/logo/deezer.png";
 import tele from "./assets/logo/tele.png";
 import email from "./assets/logo/email.png";
 import home from "./assets/logo/home.png";
+
 function Contacts() {
+  const socialLinks = [
+    { url: "https://www.facebook.com/chrishen.silva.2025", icon: fb, name: "Facebook" },
+    { url: "https://www.instagram.com/chrishen_silva/", icon: inster, name: "Instagram" },
+    { url: "https://open.spotify.com/artist/5XShvesrxeUmkwuCN4Lm6P?si=hWyskldBSJ6UF-awS6gkYA", icon: spotify, name: "Spotify" },
+    { url: "https://music.apple.com/sg/artist/chrishen-silva/1549622928", icon: itunes, name: "Apple Music" },
+    { url: "https://www.youtube.com/@Chrishensilva", icon: yt, name: "YouTube" },
+    { url: "https://on.soundcloud.com/mo9nQA1ZPCbZVfJIPW", icon: soundcloud, name: "SoundCloud" },
+    { url: "https://link.deezer.com/s/31yJLmensk3WYe27BEhRu", icon: deezer, name: "Deezer" }
+  ];
+
   return (
-    <>
-      <div className="contact-main" id="contact">
-        <div className="contact-container">
-          <div className="contact-head">
-            <h2>CONTACT</h2>
-            <p>
-              Follow me on social media platforms and keep in touch with
-              Chrishen
-            </p>
-          </div>
-          <div className="contact-body">
-            <div className="contact-me">
-              <div className="contact-heading">
-                <h3>
-                  <img src={home} className="conlogo" alt="home logo"></img>{" "}
-                  Address
-                </h3>
-                <h3>
-                  <img src={email} className="conlogo" alt="email logo"></img>
-                  Email
-                </h3>
-                <h3>
-                  <img src={tele} className="conlogo" alt="phone logo"></img>
-                  Contact Number
-                </h3>
+    <section className="contact-section" id="contact">
+      <div className="contact-container" data-aos="fade-up">
+        <div className="contact-grid">
+
+          <div className="contact-sidebar">
+            <div className="section-head">
+              <h2 className="section-title">GET IN TOUCH</h2>
+              <p className="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out across any platform.</p>
+            </div>
+
+            <div className="contact-info">
+              <div className="info-item">
+                <div className="info-icon">
+                  <img src={home} alt="location" />
+                </div>
+                <div className="info-text">
+                  <h3>Our Studio</h3>
+                  <p>No.76, Walanagoda, Katunayake</p>
+                </div>
               </div>
-              <div className="contact-p">
-                <p>No.76, Walanagoda, Katunayake</p>
-                <p>chrishensilva@gmail.com</p>
-                <p>070 169 0749/076 222 5024</p>
+
+              <div className="info-item">
+                <div className="info-icon">
+                  <img src={email} alt="email" />
+                </div>
+                <div className="info-text">
+                  <h3>Email Me</h3>
+                  <p>chrishensilva@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="info-item">
+                <div className="info-icon">
+                  <img src={tele} alt="phone" />
+                </div>
+                <div className="info-text">
+                  <h3>Call Anytime</h3>
+                  <p>+94 70 169 0749</p>
+                  <p>+94 76 222 5024</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="socialmedia">
-            <h3 data-aos="fade-up">Follow me on</h3>
-            <div className="media">
-              <a
-                href="https://www.facebook.com/chrishen.silva.2025"
-                target="_blank"
-              >
-                <img
-                  src={fb}
-                  alt="Logo of facebook"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a
-                href="https://www.instagram.com/chrishen_silva/"
-                target="_blank"
-              >
-                <img
-                  src={inster}
-                  alt="Logo of instergram"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a
-                href="https://open.spotify.com/artist/5XShvesrxeUmkwuCN4Lm6P?si=hWyskldBSJ6UF-awS6gkYA"
-                target="_blank"
-              >
-                <img
-                  src={spotify}
-                  alt="Logo of spotify"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a
-                href="https://music.apple.com/sg/artist/chrishen-silva/1549622928"
-                target="_blank"
-              >
-                <img
-                  src={itunes}
-                  alt="Logo of itunes"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a href="https://www.youtube.com/@Chrishensilva" target="_blank">
-                <img
-                  src={yt}
-                  alt="Logo of youtube"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a
-                href="https://on.soundcloud.com/mo9nQA1ZPCbZVfJIPW"
-                target="_blank"
-              >
-                <img
-                  src={soundcloud}
-                  alt="Logo of soundcloud"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
-              <a
-                href="https://link.deezer.com/s/31yJLmensk3WYe27BEhRu"
-                target="_blank"
-              >
-                <img
-                  src={deezer}
-                  alt="Logo of deezer"
-                  loading="lazy"
-                  className="logo"
-                ></img>
-              </a>
+
+          <div className="contact-social-card">
+            <div className="social-header">
+              <h3>Connect Online</h3>
+              <p>Follow the journey on streaming and social platforms.</p>
+            </div>
+            <div className="social-grid">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-btn"
+                  title={link.name}
+                >
+                  <img src={link.icon} alt={link.name} className="social-icon" />
+                  <span>{link.name}</span>
+                </a>
+              ))}
             </div>
           </div>
+
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

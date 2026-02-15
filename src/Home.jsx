@@ -1,10 +1,21 @@
+import React, { useState, useEffect } from "react";
 import Featured from "./Featured.jsx";
 import Body from "./Body.jsx";
 
 function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="navigation" data-aos="fade-down">
+      <div className={`navigation ${scrolled ? "scrolled" : ""}`} data-aos="fade-down">
         <h2 className="nav-title">Chrishen</h2>
         <div className="nav-menu">
           <ul className="menu">
