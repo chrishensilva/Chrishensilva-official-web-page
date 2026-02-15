@@ -80,6 +80,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
+  padding: 5px;
 }
 
 .nav-menu {
@@ -88,7 +89,7 @@ body {
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
   border: 1px solid var(--glass-border);
-  padding: 8px 12px;
+  padding: 16px 12px;
   border-radius: 100px;
   position: absolute;
   left: 50%;
