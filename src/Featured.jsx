@@ -4,7 +4,7 @@ import featured from "./assets/Featured.webp";
 function Featured() {
   const bgRef = useRef(null);
 
-  useEffect(() => {
+  /*useEffect(() => {
     const speed = 0.3; // smaller means background moves slower
 
     const handleScroll = () => {
@@ -17,6 +17,26 @@ function Featured() {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     handleScroll(); // initial set
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);*/
+  useEffect(() => {
+    const zoomSpeed = 0.0005; // Adjust this for sensitivity
+    const initialScale = 1.3;  // The starting "zoomed-in" level
+    const minScale = 1;        // The point where zooming stops
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (bgRef.current) {
+        // Calculate the new scale
+        const newScale = Math.max(minScale, initialScale - scrollY * zoomSpeed);
+
+        bgRef.current.style.transform = `scale(${newScale})`;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial call to set the start state
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
