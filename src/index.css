@@ -64,12 +64,12 @@ body {
   transition: var(--transition);
 }
 
-.navigation.scrolled {
+/*.navigation.scrolled {
   background: rgba(10, 10, 11, 0.8);
   backdrop-filter: var(--glass-blur);
   padding: 15px 40px;
   border-bottom: 1px solid var(--glass-border);
-}
+}*/
 
 .nav-title {
   font-size: 1.5rem;
@@ -107,7 +107,8 @@ body {
   padding: 8px 20px;
   cursor: pointer;
   border-radius: 100px;
-  color: var(--text-muted);
+  /*color: var(--text-muted);*/
+  color: white;
   font-size: 0.9rem;
   font-weight: 500;
   transition: var(--transition);
@@ -798,7 +799,8 @@ body {
   }
 
   .nav-menu {
-    position: fixed;
+    display: none;
+    /*position: fixed;
     top: auto;
     bottom: 20px;
     left: 50%;
@@ -810,7 +812,7 @@ body {
     z-index: 1000;
     display: flex;
     justify-content: center;
-    border-radius: 100px;
+    border-radius: 100px;*/
   }
 
   .menu li a {
