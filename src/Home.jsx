@@ -26,6 +26,9 @@ function Home() {
               <a href="#release">Releases</a>
             </li>
             <li>
+              <a href="/samples">Samples</a>
+            </li>
+            <li>
               <a href="#bio">About</a>
             </li>
             <li>

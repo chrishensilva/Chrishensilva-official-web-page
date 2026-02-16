@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import Studio from "./Studio/Studio.jsx";
 import Package1 from "./Studio/Package1.jsx";
+import Samples from "./Samples.jsx";
 import { Helmet } from "react-helmet";
 import { updateSEO } from "./seo";
 {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
         <Route path="/package1" element={<Package1 />} />
+        <Route path="/samples" element={<Samples />} />
       </Routes>
     </>
   );
