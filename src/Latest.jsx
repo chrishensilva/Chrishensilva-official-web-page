@@ -47,6 +47,12 @@ function Latest() {
                         >
                             View All Releases
                         </a>
+                        <a
+                            href="/samples"
+                            className="allrelease"
+                        >
+                            Listen to Audio Drafts
+                        </a>
                     </div>
                 </div>
             </div>
