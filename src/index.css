@@ -974,6 +974,13 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
   }
+
+  .latest-action {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 .scroll-btn {
