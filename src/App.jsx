@@ -7,12 +7,15 @@ import Package1 from "./Studio/Package1.jsx";
 import Samples from "./Samples.jsx";
 import { Helmet } from "react-helmet";
 import { updateSEO } from "./seo";
+import Loader from "./Loader.jsx";
 {
   /*import { Analytics } from "@vercel/analytics/next";*/
 }
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     // Replace with your GA4 Measurement ID
     const script = document.createElement("script");
@@ -39,15 +42,19 @@ function App() {
   }, []);
 
   useEffect(() => {
-    AOS.init({
-      duration: 800, // animation duration in ms
-      once: true, // animate only once
-      easing: "ease-in-out",
-    });
-  }, []);
+    if (!loading) {
+      AOS.init({
+        duration: 800, // animation duration in ms
+        once: true, // animate only once
+        easing: "ease-in-out",
+      });
+    }
+  }, [loading]);
+
 
   return (
     <>
+      {loading && <Loader onFinished={() => setLoading(false)} />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
@@ -57,5 +64,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;
